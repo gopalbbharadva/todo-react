@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Todoinput from './Components/Todoinput.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p style={{fontSize:"1.5rem"}}><span style={{color:"#10B981"}}>Todo app</span> with  
+      <span style={{color:"#3B82F6"}}>  react</span> and 
+      <span style={{color:"#FCD34D"}}>  firebase.</span></p><br/>
+      <Todoinput/>
     </div>
   );
 }
